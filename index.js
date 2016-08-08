@@ -33,7 +33,7 @@ exports.handler = (event, context, callback) => {
             '<ReturnCarrierRoute>true</ReturnCarrierRoute>' + // Use Carrier Route to determine if address is PO Box
             '<Address ID="0">' +
             '<FirmName/>' +
-            '<Address1>' + (event.address_line_2 || "") + '</Address1>' +
+            '<Address1>' + (event.address_line_2 || '') + '</Address1>' +
             '<Address2>' + event.address_line_1 + '</Address2>' +
             '<City/>' +
             '<State/>' +
